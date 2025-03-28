@@ -37,8 +37,6 @@ const UserCard = ({ data }) => {
     await dispatch(editUser({ id: data.id, updatedUser: edited }));
     setEditing(false);
     setLoading(false);
-
-    
   };
 
   return (
