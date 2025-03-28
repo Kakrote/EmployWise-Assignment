@@ -15,10 +15,10 @@ export default function Home() {
 
   const dispatch=useDispatch()
   const router=useRouter()
-  const token=localStorage.getItem('token')
   
-
+  
   useEffect(() => {
+    const token=localStorage.getItem('token')
     if(token){
       router.push('/dashBord')
     }
